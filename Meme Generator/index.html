@@ -1,0 +1,43 @@
+<head>
+    <title>Meme Generator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Meme Generator</h1>
+    </header>
+    <main>
+        <form onsubmit="event.preventDefault(); generateMeme();"> <input type="text" id="image" class="form-input"
+                placeholder="Image URL" required> <input type="text" id="top-text" class="form-input"
+                placeholder="Top Text" required> <input type="text" id="bottom-text" class="form-input"
+                placeholder="Bottom Text" required> <select id="text-position" class="form-input">
+                <option value="top-left">Left</option>
+                <option value="top-right">Right</option>
+                <option value="center">Center</option>
+            </select>
+            <input type="color" id="text-color" class="form-input form-color" value="#ffffff">
+            <button type="submit" class="btn-generate">Generate</button>
+        </form>
+        <div id="meme-container" class="image-container"></div>
+        <div class="button-container">
+            <div class="social-share"> <button onclick="shareOnTwitter()">Share on Telegram</button> </div>
+            <div class="social-share"> <button class="save-button" onclick="saveMeme()">Save Image</button></div>
+        </div>
+
+        <div class="saved-memes">
+            <h3>Saved Memes</h3>
+            <ul class="saved-memes-list"></ul>
+        </div>
+    </main>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="demot.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #212121;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #212121;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid #424242;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-color {
+    width: 56px;
+    padding: 1px;
+}
+
+.btn-generate {
+    margin-top: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #97010E;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 26px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-generate:hover {
+    background-color: #d30314;
+}
+
+.image-container {
+    margin-top: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.meme-image {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.meme-text {
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.top-text {
+    top: 20px;
+}
+
+.bottom-text {
+    bottom: 20px;
+}
+
+.social-share {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.save-button {
+    text-align: center;
+}
+
+.social-share button {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #212121;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.social-share button:hover {
+    background-color: #424242;
+}
+
+.saved-memes {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.saved-memes h3 {
+    text-shadow: none;
+    background-color: #212121;
+    color: #ffffff;
+}
+
+.saved-memes-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.saved-memes-list li {
+    margin: 10px;
+    display: inline-block;
+}
+
+.saved-memes-list img {
+    padding: 5px;
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.saved-memes-list img:hover {
+    transform: scale(1.05);
+}
